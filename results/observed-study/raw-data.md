@@ -9,7 +9,7 @@ drafting handoff note is deliberately excluded.
 
 **Release-asset filename:** `tool-alias-bias-observed-study-v1-raw.tar.gz`  
 **SHA-256:** `f683d77aef5f6b6e06f684003a90eed8777a5f6a0efa7adac1d4e733355c6ff2`  
-**Download URL:** added to this file when the GitHub release is published.
+**Download URL:** https://github.com/mnmalali/tool-alias-bias/releases/download/v0.1.0/tool-alias-bias-observed-study-v1-raw.tar.gz
 
 ## Extract and verify
 
