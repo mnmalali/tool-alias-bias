@@ -1,0 +1,209 @@
+{
+  "actual_matrix_cost_usd_known": 1.27798315,
+  "actual_smoke_cost_usd_known": 0.00071084,
+  "actual_total_cost_usd_known": 1.27869399,
+  "analysis_schema_version": 1,
+  "calibration_accounting": {
+    "haiku": {
+      "excluded_tasks": 1,
+      "planned_tasks": 90,
+      "retained_complete_repeat_tasks": 89,
+      "retained_requests": 178
+    },
+    "jev": {
+      "excluded_tasks": 1,
+      "planned_tasks": 90,
+      "retained_complete_repeat_tasks": 89,
+      "retained_requests": 178
+    },
+    "luna": {
+      "excluded_tasks": 1,
+      "planned_tasks": 90,
+      "retained_complete_repeat_tasks": 89,
+      "retained_requests": 178
+    }
+  },
+  "calibration_thresholds_path": "results/observed-study/raw\\thresholds.json",
+  "empirical_results_available": true,
+  "failed_or_invalid_examples": [
+    "VH-56__C5__r2__jev",
+    "TS-40__C0__r1__jev",
+    "VH-46__C0__r2__jev",
+    "RI-20__C5__r2__luna",
+    "RI-30__C4__r2__haiku",
+    "RI-78__C5__r1__haiku",
+    "TS-34__C5__r1__jev",
+    "TS-82__C0__r2__jev",
+    "VH-17__C0__r1__haiku",
+    "VH-37__C4__r2__luna",
+    "VH-30__C0__r1__luna",
+    "RI-70__C1__r1__jev",
+    "RI-25__C3__r2__luna"
+  ],
+  "failed_or_invalid_final_requests": 13,
+  "final_logical_requests": 10800,
+  "generated_at": "2026-10-13T01:16:18.205969Z",
+  "haiku_weight_normalization": {
+    "mean_absolute_reported_sum_deviation_from_one": 0.3166905754795663,
+    "method": "Each complete nonnegative elicited weight is divided by the positive reported total.",
+    "reported_sum_max": 4.8,
+    "reported_sum_min": 0.2,
+    "valid_recorded_final_responses": 3597
+  },
+  "held_out_complete_pair_tasks_path": "results/observed-study/raw\\held_out_complete_pair_tasks.csv",
+  "labels_independently_reviewed": false,
+  "limitations": [
+    "The task labels were AI drafted and mechanically checked; independent researcher review is pending unless the ledger says otherwise.",
+    "Two repeats are repeated service requests, not independent tasks.",
+    "The target population is this bounded synthetic fixture and dispatch registry.",
+    "Haiku uses normalized elicited relative weights, not native model probabilities; raw weights and their sums are retained in the ledger."
+  ],
+  "missing_logical_request_examples": [],
+  "missing_logical_requests": 0,
+  "note": "Paired complete-case estimates are available, with worst-case full-180-task bounds for missing pairs. They may be biased if missingness depends on condition or outcome.",
+  "operational_accounting_path": "results/observed-study/raw\\operational_by_split_model_condition.csv",
+  "paired_contrasts_path": "results/observed-study/raw\\paired_contrasts.json",
+  "paper_ready": false,
+  "partial_analysis_rule": "At least 80/90 calibration tasks per model need two valid C0 repeats. Two valid C0 repeats and two valid condition repeats are required per held-out task. Bootstrap retained scenario families within domain and compute a task-weighted ratio of sums in each draw. Missing task-level signed effects are bounded by [-1,1].",
+  "pending_review_tasks": 300,
+  "physical_attempts": 10879,
+  "pilot_request_accounting": {
+    "actual_cost_complete": false,
+    "attempt_rows_written": 10879,
+    "completed_without_transport_or_parse_error": 10787,
+    "final_logical_request_errors": 13,
+    "final_logical_request_rows": 10800,
+    "incomplete_logical_requests": 0,
+    "known_actual_cost_usd_lower_bound": 1.27798315,
+    "physical_error_attempts": 92,
+    "physical_rows_with_unknown_cost": 92,
+    "planned_requests": 10800,
+    "retry_attempts": 79,
+    "valid_distributions": 10787
+  },
+  "planned_logical_requests": 10800,
+  "primary_endpoint": {
+    "ci95_high": -0.6909845584081352,
+    "ci95_low": -0.8595505617977528,
+    "description": "Jev P2 C2 minus C0 coverage on held-out paired complete-case tasks",
+    "estimate": -0.7780898876404494,
+    "excluded_tasks": 2,
+    "full_180_task_worst_case_high": -0.7583333333333333,
+    "full_180_task_worst_case_low": -0.7805555555555556,
+    "predeclared_practical_effect_bound": 0.1,
+    "retained_families": 60,
+    "retained_tasks": 178
+  },
+  "provenance_notes": [
+    "Some successful responses lack optional system_fingerprint; returned model remains logged."
+  ],
+  "provider_snapshots": [
+    [
+      "haiku",
+      "None",
+      "None",
+      "None"
+    ],
+    [
+      "haiku",
+      "anthropic/claude-haiku-5.5",
+      "Google",
+      "None"
+    ],
+    [
+      "jev",
+      "None",
+      "None",
+      "None"
+    ],
+    [
+      "jev",
+      "typesafe/jev-1.13-20260917",
+      "TypeSafe",
+      "None"
+    ],
+    [
+      "luna",
+      "None",
+      "None",
+      "None"
+    ],
+    [
+      "luna",
+      "openai/gpt-6-luna-decisions-20261006",
+      "OpenAI",
+      "None"
+    ]
+  ],
+  "run_directory": "results/observed-study/raw",
+  "secondary_luna_endpoint": {
+    "ci95_high": -0.6166666666666667,
+    "ci95_low": -0.7888888888888889,
+    "description": "Luna Decisions P2 C2 minus C0 coverage on held-out paired complete-case tasks",
+    "estimate": -0.7055555555555556,
+    "excluded_tasks": 0,
+    "full_180_task_worst_case_high": -0.7055555555555556,
+    "full_180_task_worst_case_low": -0.7055555555555556,
+    "retained_families": 60,
+    "retained_tasks": 180
+  },
+  "smoke_preflight": {
+    "budget_accounted_cost_usd": 0.00071084,
+    "cost_complete": true,
+    "dataset_hash": "b45b38c805b8419bfb74c94a5f46c5cf76d8d0f8c6c9af6a32f26e712fee0a7f",
+    "generated_at": "2026-10-12T18:11:46.264953Z",
+    "identity_hash": "daedce22bd1ced838fc12dc03375f8e9e172d5e35e604925c0de2e5875c967dc",
+    "known_cost_usd": 0.00071084,
+    "ledger_path": "results/observed-study/raw\\smoke_preflight.jsonl",
+    "logical_probes_passed": 6,
+    "max_transport_retries": 2,
+    "models": {
+      "haiku": "anthropic/claude-haiku-5.5",
+      "jev": "typesafe/jev-1.13",
+      "luna": "openai/gpt-6-luna-decisions"
+    },
+    "note": "Six logical smoke probes and any separately logged physical transport retries are outside the 10,800-request study matrix and count as development expenditure.",
+    "observed_returned_models": {
+      "haiku": [
+        "anthropic/claude-haiku-5.5"
+      ],
+      "jev": [
+        "typesafe/jev-1.13-20260917"
+      ],
+      "luna": [
+        "openai/gpt-6-luna-decisions-20261006"
+      ]
+    },
+    "observed_returned_providers": {
+      "haiku": [
+        "Google"
+      ],
+      "jev": [
+        "TypeSafe"
+      ],
+      "luna": [
+        "OpenAI"
+      ]
+    },
+    "requested_provider_constraints": {
+      "haiku": {
+        "allow_fallbacks": false,
+        "only": [
+          "google-vertex/global"
+        ],
+        "require_parameters": true
+      }
+    },
+    "requests_issued": 6,
+    "status": "passed",
+    "transport_retry_count": 0,
+    "unpriced_attempt_count": 0,
+    "unpriced_cost_reserve_usd": 0.0
+  },
+  "snapshot_comparability_flags": [],
+  "status": "partial",
+  "synthetic_rows": 0,
+  "tie_diagnostics_path": "results/observed-study/raw\\tie_rates_by_split_model_condition.csv",
+  "total_physical_attempts_including_smoke": 10885,
+  "unknown_cost_attempts": 92
+}

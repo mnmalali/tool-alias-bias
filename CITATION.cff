@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code, benchmark, or results, please cite this release."
+type: software
+title: "Tool Alias Bias Study"
+authors:
+  - family-names: "Alali"
+    given-names: "Mohamad"
+version: "0.1.0"
+license: MIT
+keywords:
+  - LLM agents
+  - tool selection
+  - alias bias
+  - decision models
+  - abstention thresholds
+  - benchmark
+abstract: >
+  Reproducibility package for a controlled experiment measuring how exact
+  visible aliases of an unchanged backend action affect automatic-acceptance
+  coverage under thresholds frozen on an unaliased catalog. Labels await
+  independent review and the recorded matrix is partial.

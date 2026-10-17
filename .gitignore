@@ -1,0 +1,33 @@
+# Python and test artefacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Generated experiment material and local extraction directories
+results/observed-study/raw/
+results/recomputed*/
+results/my-run*/
+release-assets/
+pilot/fixture_repo/
+pilot/validation/
+study/validation/
+**/ANALYSIS_SUMMARY.md
+
+# Legacy preparation material: retained locally but excluded from the public repo
+benchmark/
+protocol/
+src/
+tests/test_repository.py
+
+# Secrets and editor files
+.env
+*.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

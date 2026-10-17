@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "registry_id": "copperledger-tool-registry-v1",
+  "fixture_id": "copperledger-inventory-v1",
+  "visible_option_id_pattern": "tool_XX",
+  "alias_option_ids": ["tool_11", "tool_12", "tool_13"],
+  "domains": {
+    "repository_inspection": {
+      "prompt_description_target_characters": 124,
+      "canonical_action_ids": [
+        "repo.read_service", "repo.read_pricing", "repo.read_api", "repo.read_config", "repo.read_webhooks",
+        "repo.read_cli", "repo.read_readme", "repo.read_service_tests", "repo.search_reserve_stock", "repo.request_clarification"
+      ],
+      "control_action_ids": ["repo.read_codeowners", "repo.read_security", "repo.read_package_init"]
+    },
+    "test_selection": {
+      "prompt_description_target_characters": 122,
+      "canonical_action_ids": [
+        "test.service_unit", "test.pricing_unit", "test.api_unit", "test.webhooks_unit", "test.cli_unit",
+        "test.checkout_integration", "test.restock_integration", "test.webhook_dedup_integration", "test.reservation_regression", "test.request_clarification"
+      ],
+      "control_action_ids": ["test.config_unit", "test.docs_unit", "test.package_unit"]
+    },
+    "version_history": {
+      "prompt_description_target_characters": 113,
+      "canonical_action_ids": [
+        "history.show_reserve_introduction", "history.show_price_rounding", "history.show_webhook_retry", "history.show_api_health", "history.show_cli_json",
+        "history.show_config_default", "history.diff_reservation_regression", "history.blame_service", "history.log_webhooks", "history.request_clarification"
+      ],
+      "control_action_ids": ["history.show_bootstrap", "history.log_readme", "history.log_security"]
+    }
+  },
+  "actions": {
+    "repo.read_service": {
+      "base_option_id": "tool_01", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "src/inventory/service.py"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of src/inventory/service.py without writing files.",
+      "description": "Read `src/inventory/service.py` (read-only): stock availability, reservation, and release logic."
+    },
+    "repo.read_pricing": {
+      "base_option_id": "tool_02", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "src/inventory/pricing.py"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of src/inventory/pricing.py without writing files.",
+      "description": "Read `src/inventory/pricing.py` (read-only): tax calculation and whole-cent rounding logic."
+    },
+    "repo.read_api": {
+      "base_option_id": "tool_03", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "src/inventory/api.py"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of src/inventory/api.py without writing files.",
+      "description": "Read `src/inventory/api.py` (read-only): order intake and API health response helpers."
+    },
+    "repo.read_config": {
+      "base_option_id": "tool_04", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "src/inventory/config.py"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of src/inventory/config.py without writing files.",
+      "description": "Read `src/inventory/config.py` (read-only): STOCK_ALERT_LIMIT parsing and default behavior."
+    },
+    "repo.read_webhooks": {
+      "base_option_id": "tool_05", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "src/inventory/webhooks.py"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of src/inventory/webhooks.py without writing files.",
+      "description": "Read `src/inventory/webhooks.py` (read-only): restock delivery retry and duplicate-event handling."
+    },
+    "repo.read_cli": {
+      "base_option_id": "tool_06", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "src/inventory/cli.py"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of src/inventory/cli.py without writing files.",
+      "description": "Read `src/inventory/cli.py` (read-only): text and JSON formatting for inventory output."
+    },
+    "repo.read_readme": {
+      "base_option_id": "tool_07", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "README.md"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of README.md without writing files.",
+      "description": "Read `README.md` (read-only): fixture purpose and the documented command for its test suite."
+    },
+    "repo.read_service_tests": {
+      "base_option_id": "tool_08", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "tests/test_service.py"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of tests/test_service.py without writing files.",
+      "description": "Read `tests/test_service.py` (read-only): focused expectations for reservation and release behavior."
+    },
+    "repo.search_reserve_stock": {
+      "base_option_id": "tool_09", "implementation_id": "fixture.search_literal.v1", "handler": "search_literal",
+      "bound_arguments": {"path": "src", "pattern": "reserve_stock"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns sorted source lines under src containing the literal reserve_stock, without writes.",
+      "description": "Search `src/` (read-only) for the literal `reserve_stock` to locate its implementation and callers."
+    },
+    "repo.request_clarification": {
+      "base_option_id": "tool_10", "implementation_id": "fixture.clarification.v1", "handler": "request_clarification",
+      "bound_arguments": {"required_fields": ["target file or symbol", "inspection question"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["conversation:ask"], "preconditions": ["The request lacks a target or an answerable inspection goal"],
+      "observable_effect": "Returns a structured request for missing task details and does not access the repository.",
+      "description": "Ask for a target file or symbol and a concrete inspection question before accessing the repository."
+    },
+    "repo.read_codeowners": {
+      "base_option_id": "tool_11", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "CODEOWNERS"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of CODEOWNERS without writing files.",
+      "description": "Read `CODEOWNERS` (read-only): repository ownership declarations for the fixture."
+    },
+    "repo.read_security": {
+      "base_option_id": "tool_12", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "SECURITY.md"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of SECURITY.md without writing files.",
+      "description": "Read `SECURITY.md` (read-only): the fixture's credential-exposure reporting policy."
+    },
+    "repo.read_package_init": {
+      "base_option_id": "tool_13", "implementation_id": "fixture.read_file.v1", "handler": "read_file",
+      "bound_arguments": {"path": "src/inventory/__init__.py"}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read"], "preconditions": ["CopperLedger fixture repository is present"],
+      "observable_effect": "Returns the UTF-8 contents of src/inventory/__init__.py without writing files.",
+      "description": "Read `src/inventory/__init__.py` (read-only): the package's short import-facing module description."
+    },
+
+    "test.service_unit": {
+      "base_option_id": "tool_01", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_service", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only tests.test_service and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_service`: unit checks for stock availability, reservation, and release logic."
+    },
+    "test.pricing_unit": {
+      "base_option_id": "tool_02", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_pricing", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only tests.test_pricing and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_pricing`: unit checks for tax calculation and half-up cent rounding."
+    },
+    "test.api_unit": {
+      "base_option_id": "tool_03", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_api", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only tests.test_api and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_api`: unit checks for order intake and the inventory health response."
+    },
+    "test.webhooks_unit": {
+      "base_option_id": "tool_04", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_webhooks", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only tests.test_webhooks and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_webhooks`: unit checks for restock delivery retry and exhaustion handling."
+    },
+    "test.cli_unit": {
+      "base_option_id": "tool_05", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_cli", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only tests.test_cli and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_cli`: unit checks for text and JSON inventory formatting."
+    },
+    "test.checkout_integration": {
+      "base_option_id": "tool_06", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_integration_checkout", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only checkout integration tests and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_integration_checkout`: checkout flow combines reservation with taxed pricing."
+    },
+    "test.restock_integration": {
+      "base_option_id": "tool_07", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_integration_restock", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only restock integration tests and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_integration_restock`: a restock event changes checkout availability."
+    },
+    "test.webhook_dedup_integration": {
+      "base_option_id": "tool_08", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_integration_webhook", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only duplicate-webhook integration tests and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_integration_webhook`: duplicate restock events must not double-count stock."
+    },
+    "test.reservation_regression": {
+      "base_option_id": "tool_09", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_regression_reservation", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only reservation regression tests and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_regression_reservation`: nonpositive reconciliation releases must fail."
+    },
+    "test.request_clarification": {
+      "base_option_id": "tool_10", "implementation_id": "fixture.clarification.v1", "handler": "request_clarification",
+      "bound_arguments": {"required_fields": ["changed component", "behavior to verify"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["conversation:ask"], "preconditions": ["The request lacks a changed component or testable behavior"],
+      "observable_effect": "Returns a structured request for missing test-selection details and does not execute tests.",
+      "description": "Ask which component changed and which behavior matters before selecting a test command."
+    },
+    "test.config_unit": {
+      "base_option_id": "tool_11", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_config", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only tests.test_config and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_config`: unit checks for STOCK_ALERT_LIMIT defaults and environment override."
+    },
+    "test.docs_unit": {
+      "base_option_id": "tool_12", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_docs", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only tests.test_docs and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_docs`: checks that the README publishes the standard test command."
+    },
+    "test.package_unit": {
+      "base_option_id": "tool_13", "implementation_id": "fixture.unittest.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["{python}", "-m", "unittest", "tests.test_package", "-v"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:execute_tests"], "preconditions": ["Python standard library unittest is available"],
+      "observable_effect": "Runs only tests.test_package and returns its exit code, stdout, and stderr; fixture files are unchanged.",
+      "description": "Run only `tests.test_package`: checks that the CopperLedger fixture package imports."
+    },
+
+    "history.show_reserve_introduction": {
+      "base_option_id": "tool_01", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "show", "--format=fuller", "--stat", "fixture/reserve-stock-introduced"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git tags are present"],
+      "observable_effect": "Returns the tagged reservation-introduction commit and stat without changing Git state.",
+      "description": "Show the full patch and stat for tag `fixture/reserve-stock-introduced`."
+    },
+    "history.show_price_rounding": {
+      "base_option_id": "tool_02", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "show", "--format=fuller", "--stat", "fixture/price-rounding-fix"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git tags are present"],
+      "observable_effect": "Returns the tagged price-rounding commit and stat without changing Git state.",
+      "description": "Show the full patch and stat for tag `fixture/price-rounding-fix`."
+    },
+    "history.show_webhook_retry": {
+      "base_option_id": "tool_03", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "show", "--format=fuller", "--stat", "fixture/webhook-retry"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git tags are present"],
+      "observable_effect": "Returns the tagged webhook-retry commit and stat without changing Git state.",
+      "description": "Show the full patch and stat for tag `fixture/webhook-retry`."
+    },
+    "history.show_api_health": {
+      "base_option_id": "tool_04", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "show", "--format=fuller", "--stat", "fixture/api-health"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git tags are present"],
+      "observable_effect": "Returns the tagged API-health commit and stat without changing Git state.",
+      "description": "Show the full patch and stat for tag `fixture/api-health`."
+    },
+    "history.show_cli_json": {
+      "base_option_id": "tool_05", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "show", "--format=fuller", "--stat", "fixture/cli-json"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git tags are present"],
+      "observable_effect": "Returns the tagged JSON-output commit and stat without changing Git state.",
+      "description": "Show the full patch and stat for tag `fixture/cli-json`."
+    },
+    "history.show_config_default": {
+      "base_option_id": "tool_06", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "show", "--format=fuller", "--stat", "fixture/config-default"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git tags are present"],
+      "observable_effect": "Returns the tagged configuration-default commit and stat without changing Git state.",
+      "description": "Show the full patch and stat for tag `fixture/config-default`."
+    },
+    "history.diff_reservation_regression": {
+      "base_option_id": "tool_07", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "diff", "fixture/config-default", "fixture/reservation-regression", "--", "src/inventory/service.py"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git tags are present"],
+      "observable_effect": "Returns the bounded service.py diff for the reservation regression without changing Git state.",
+      "description": "Diff `src/inventory/service.py` from config-default to the reservation-regression tag."
+    },
+    "history.blame_service": {
+      "base_option_id": "tool_08", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "blame", "--", "src/inventory/service.py"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git history is present"],
+      "observable_effect": "Returns line-level attribution for service.py without changing Git state.",
+      "description": "Blame `src/inventory/service.py` to identify the commit and author of its current lines."
+    },
+    "history.log_webhooks": {
+      "base_option_id": "tool_09", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "log", "--format=%H%x09%s", "--", "src/inventory/webhooks.py"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git history is present"],
+      "observable_effect": "Returns the commit history affecting webhooks.py without changing Git state.",
+      "description": "List commits that changed `src/inventory/webhooks.py`, with commit IDs and subjects."
+    },
+    "history.request_clarification": {
+      "base_option_id": "tool_10", "implementation_id": "fixture.clarification.v1", "handler": "request_clarification",
+      "bound_arguments": {"required_fields": ["file or symbol", "revision range or historical question"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["conversation:ask"], "preconditions": ["The request lacks a file/symbol or a bounded history question"],
+      "observable_effect": "Returns a structured request for missing history details and does not access Git.",
+      "description": "Ask for a file or symbol and a bounded historical question before inspecting Git history."
+    },
+    "history.show_bootstrap": {
+      "base_option_id": "tool_11", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "show", "--format=fuller", "--stat", "fixture/bootstrap"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git tags are present"],
+      "observable_effect": "Returns the initial fixture commit and stat without changing Git state.",
+      "description": "Show the full patch and stat for the initial `fixture/bootstrap` commit."
+    },
+    "history.log_readme": {
+      "base_option_id": "tool_12", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "log", "--format=%H%x09%s", "--", "README.md"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git history is present"],
+      "observable_effect": "Returns the commit history affecting README.md without changing Git state.",
+      "description": "List commits that changed `README.md`, with commit IDs and subjects."
+    },
+    "history.log_security": {
+      "base_option_id": "tool_13", "implementation_id": "fixture.git_command.v1", "handler": "run_command",
+      "bound_arguments": {"argv": ["git", "-c", "color.ui=false", "log", "--format=%H%x09%s", "--", "SECURITY.md"]}, "argument_schema": {"type": "object", "properties": {}, "additionalProperties": false},
+      "permissions": ["repository:read_history"], "preconditions": ["Fixture Git history is present"],
+      "observable_effect": "Returns the commit history affecting SECURITY.md without changing Git state.",
+      "description": "List commits that changed `SECURITY.md`, with commit IDs and subjects."
+    }
+  }
+}

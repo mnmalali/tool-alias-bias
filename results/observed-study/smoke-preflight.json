@@ -1,0 +1,53 @@
+{
+  "budget_accounted_cost_usd": 0.00071084,
+  "cost_complete": true,
+  "dataset_hash": "b45b38c805b8419bfb74c94a5f46c5cf76d8d0f8c6c9af6a32f26e712fee0a7f",
+  "generated_at": "2026-10-12T18:11:46.264953Z",
+  "identity_hash": "daedce22bd1ced838fc12dc03375f8e9e172d5e35e604925c0de2e5875c967dc",
+  "known_cost_usd": 0.00071084,
+  "ledger_path": "results/observed-study/raw\\smoke_preflight.jsonl",
+  "logical_probes_passed": 6,
+  "max_transport_retries": 2,
+  "models": {
+    "haiku": "anthropic/claude-haiku-5.5",
+    "jev": "typesafe/jev-1.13",
+    "luna": "openai/gpt-6-luna-decisions"
+  },
+  "note": "Six logical smoke probes and any separately logged physical transport retries are outside the 10,800-request study matrix and count as development expenditure.",
+  "observed_returned_models": {
+    "haiku": [
+      "anthropic/claude-haiku-5.5"
+    ],
+    "jev": [
+      "typesafe/jev-1.13-20260917"
+    ],
+    "luna": [
+      "openai/gpt-6-luna-decisions-20261006"
+    ]
+  },
+  "observed_returned_providers": {
+    "haiku": [
+      "Google"
+    ],
+    "jev": [
+      "TypeSafe"
+    ],
+    "luna": [
+      "OpenAI"
+    ]
+  },
+  "requested_provider_constraints": {
+    "haiku": {
+      "allow_fallbacks": false,
+      "only": [
+        "google-vertex/global"
+      ],
+      "require_parameters": true
+    }
+  },
+  "requests_issued": 6,
+  "status": "passed",
+  "transport_retry_count": 0,
+  "unpriced_attempt_count": 0,
+  "unpriced_cost_reserve_usd": 0.0
+}

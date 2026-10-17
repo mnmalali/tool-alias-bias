@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "dataset_id": "jev-tool-alias-pilot-v1",
+  "status": "mechanically-verified-pending-researcher-label-review",
+  "fixture": {
+    "fixture_id": "copperledger-inventory-v1",
+    "path": "pilot/fixture_repo",
+    "source_provenance": "Synthetic, dependency-free repository authored for this pilot; no public issue text is adapted."
+  },
+  "label_policy": {
+    "unit": "canonical executable action, not visible option ID",
+    "review_requirement": "A researcher should sign off the task-label review sheet before a paid run. Mechanical validation is not independent human annotation.",
+    "ambiguity_rule": "Replace an ambiguous task before live calls; do not change a label because a model chooses another action."
+  },
+  "tasks": [
+    {
+      "task_id": "RI-01", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "reserve-shortage-explanation",
+      "task_text": "A support engineer needs the exact code path that turns an over-large checkout request into an insufficient-stock error. Before proposing a change, inspect that implementation.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one read-only next action; do not modify files.",
+      "gold_action_id": "repo.read_service", "wrong_competitor_action_id": "repo.read_api",
+      "label_rationale": "The shortage exception and reservation guard live in service.py. API order intake cannot establish the stock arithmetic or exception path.",
+      "label_evidence": {"match_kind": "literal", "marker": "class InsufficientStock"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "RI-02", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "tax-half-cent-investigation",
+      "task_text": "A finance report shows a one-cent discrepancy on a tax total that lands exactly at a half cent. Inspect the implementation that decides rounding, not a test or API wrapper.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one read-only next action; do not modify files.",
+      "gold_action_id": "repo.read_pricing", "wrong_competitor_action_id": "repo.read_service",
+      "label_rationale": "pricing.py declares the commercial rounding mode. Stock arithmetic is a plausible but irrelevant neighbor.",
+      "label_evidence": {"match_kind": "literal", "marker": "ROUND_HALF_UP"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "RI-03", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "health-endpoint-contract",
+      "task_text": "Deployment monitoring needs to know the exact status payload returned by the inventory health helper. Inspect the API-facing implementation that owns that response.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one read-only next action; do not modify files.",
+      "gold_action_id": "repo.read_api", "wrong_competitor_action_id": "repo.read_config",
+      "label_rationale": "The response contract is implemented by health() in api.py. Configuration contains a different operational concern.",
+      "label_evidence": {"match_kind": "literal", "marker": "def health"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "RI-04", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "deployed-alert-limit",
+      "task_text": "An operator says the deployed low-stock alert threshold is four rather than the documented default. Inspect the code that reads the environment setting and validates it.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one read-only next action; do not modify files.",
+      "gold_action_id": "repo.read_config", "wrong_competitor_action_id": "repo.read_readme",
+      "label_rationale": "config.py owns STOCK_ALERT_LIMIT parsing and the fallback. The README may document tests but cannot answer deployed parsing behavior.",
+      "label_evidence": {"match_kind": "literal", "marker": "STOCK_ALERT_LIMIT"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "RI-05", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "restock-delivery-retries",
+      "task_text": "A restock notification succeeds only after a transient connection failure. Inspect the code that controls retry attempts and exhausted delivery behavior.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one read-only next action; do not modify files.",
+      "gold_action_id": "repo.read_webhooks", "wrong_competitor_action_id": "repo.read_service",
+      "label_rationale": "webhooks.py owns deliver_restock_notice and its retry loop. The service module only handles stock arithmetic.",
+      "label_evidence": {"match_kind": "literal", "marker": "def deliver_restock_notice"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "RI-06", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "automation-json-format",
+      "task_text": "An automation consumer needs the precise compact JSON emitted for an inventory record. Inspect the formatter that chooses text versus JSON output.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one read-only next action; do not modify files.",
+      "gold_action_id": "repo.read_cli", "wrong_competitor_action_id": "repo.read_api",
+      "label_rationale": "cli.py owns JSON serialization. The API module is a tempting output-related distractor but has a different contract.",
+      "label_evidence": {"match_kind": "literal", "marker": "json.dumps"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "RI-07", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "documented-test-entrypoint",
+      "task_text": "A new contributor wants the project's documented one-line command for running its fixture suite. Inspect the repository document that publishes this command.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one read-only next action; do not modify files.",
+      "gold_action_id": "repo.read_readme", "wrong_competitor_action_id": "repo.read_service_tests",
+      "label_rationale": "The README is explicitly the contributor-facing source for the documented command; CI happens to run tests but is not the requested documentation.",
+      "label_evidence": {"match_kind": "literal", "marker": "CopperLedger is a deliberately small Python inventory service"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "RI-08", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "reservation-test-expectations",
+      "task_text": "Before changing reservation behavior, inspect the focused test file that specifies both successful holds and shortage handling.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one read-only next action; do not modify files.",
+      "gold_action_id": "repo.read_service_tests", "wrong_competitor_action_id": "repo.read_service",
+      "label_rationale": "tests/test_service.py gives the requested expectations, whereas implementation inspection would not directly show the test contract.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_reserve_stock_rejects_shortage"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "RI-09", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "reservation-call-sites",
+      "task_text": "A maintainer plans to rename reserve_stock and first needs every implementation or caller under src that references the symbol. Use the narrowest discovery action.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one read-only next action; do not modify files.",
+      "gold_action_id": "repo.search_reserve_stock", "wrong_competitor_action_id": "repo.read_service",
+      "label_rationale": "A literal source search is necessary to enumerate callers. Reading the definition alone cannot establish all references.",
+      "label_evidence": {
+        "match_kind": "all_regex",
+        "markers": [
+          "(?m)^src/inventory/service\\.py:\\d+:def reserve_stock",
+          "(?m)^src/inventory/checkout\\.py:\\d+:    remaining = reserve_stock"
+        ]
+      },
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "RI-10", "split": "pilot", "domain": "repository_inspection", "scenario_family_id": "ambiguous-inspection-request",
+      "task_text": "Please inspect the failing inventory behavior before the release.",
+      "repository_context": "The request gives neither a target file or symbol nor an answerable inspection goal. Select the safest next action.",
+      "gold_action_id": "repo.request_clarification", "wrong_competitor_action_id": "repo.read_service",
+      "label_rationale": "There is no bounded artifact or question to inspect. Asking for a target and concrete goal is the only admissible next step.",
+      "label_evidence": {"match_kind": "literal", "marker": "\"status\":\"clarification_required\""},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+
+    {
+      "task_id": "TS-01", "split": "pilot", "domain": "test_selection", "scenario_family_id": "reservation-shortage-unit-test",
+      "task_text": "A patch changes the guard that rejects a checkout when requested units exceed available stock. Run the narrowest existing test command that verifies this behavior.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one test or clarification action; do not edit files.",
+      "gold_action_id": "test.service_unit", "wrong_competitor_action_id": "test.checkout_integration",
+      "label_rationale": "The focused service unit suite directly asserts the shortage exception. Checkout integration is broader and checks a different happy-path combination.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_reserve_stock_rejects_shortage"},
+      "mutation": {"path": "src/inventory/service.py", "find": "if remaining < 0:", "replace": "if remaining < -1:"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "TS-02", "split": "pilot", "domain": "test_selection", "scenario_family_id": "tax-rounding-unit-test",
+      "task_text": "A change affects how a customer total ending in .5 is rounded after tax. Run the focused test suite that protects that commercial rounding rule.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one test or clarification action; do not edit files.",
+      "gold_action_id": "test.pricing_unit", "wrong_competitor_action_id": "test.checkout_integration",
+      "label_rationale": "The pricing suite names the half-cent rounding test. Checkout integration calls pricing but does not isolate the rounding-edge rule.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_rounds_half_cent_up_for_customer_totals"},
+      "mutation": {"path": "src/inventory/pricing.py", "find": "from decimal import Decimal, ROUND_HALF_UP", "replace": "from decimal import Decimal, ROUND_HALF_EVEN as ROUND_HALF_UP"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "TS-03", "split": "pilot", "domain": "test_selection", "scenario_family_id": "api-health-unit-test",
+      "task_text": "The inventory health helper was edited and monitoring depends on its service identifier. Run the narrowest existing tests for that API response.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one test or clarification action; do not edit files.",
+      "gold_action_id": "test.api_unit", "wrong_competitor_action_id": "test.service_unit",
+      "label_rationale": "test_api directly covers health(). Stock service tests do not exercise the API response.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_health_identifies_inventory_service"},
+      "mutation": {"path": "src/inventory/api.py", "find": "\"service\": \"inventory\"", "replace": "\"service\": \"warehouse\""},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "TS-04", "split": "pilot", "domain": "test_selection", "scenario_family_id": "webhook-retry-unit-test",
+      "task_text": "A change modifies the number of transient connection failures a restock notification can survive. Run the focused tests for retry and exhausted-delivery behavior.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one test or clarification action; do not edit files.",
+      "gold_action_id": "test.webhooks_unit", "wrong_competitor_action_id": "test.webhook_dedup_integration",
+      "label_rationale": "The webhook unit suite directly exercises retry attempts. Duplicate-event integration is a different at-least-once delivery concern.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_delivery_retries_transient_connection_error"},
+      "mutation": {"path": "src/inventory/webhooks.py", "find": "for attempt in range(1, attempts + 1):", "replace": "for attempt in range(1, attempts):"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "TS-05", "split": "pilot", "domain": "test_selection", "scenario_family_id": "cli-json-unit-test",
+      "task_text": "A command-line formatting change may have altered compact JSON field ordering for inventory automation. Run the targeted tests for output formatting.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one test or clarification action; do not edit files.",
+      "gold_action_id": "test.cli_unit", "wrong_competitor_action_id": "test.api_unit",
+      "label_rationale": "The CLI unit suite verifies JSON output. API tests concern a separate serialized response path.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_renders_stock_as_json_for_automation"},
+      "mutation": {"path": "src/inventory/cli.py", "find": "separators=(\",\", \":\")", "replace": "separators=(\", \", \": \")"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "TS-06", "split": "pilot", "domain": "test_selection", "scenario_family_id": "checkout-cross-module-test",
+      "task_text": "A checkout flow change now combines a stock hold with a taxed total. Run the existing integration test that spans exactly those two modules.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one test or clarification action; do not edit files.",
+      "gold_action_id": "test.checkout_integration", "wrong_competitor_action_id": "test.pricing_unit",
+      "label_rationale": "The checkout integration test combines reservation and pricing; the pricing unit suite omits the stock hold.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_checkout_holds_stock_and_calculates_taxed_total"},
+      "mutation": {"path": "src/inventory/checkout.py", "find": "\"total_cents\": total_cents", "replace": "\"total_cents\": subtotal_cents"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "TS-07", "split": "pilot", "domain": "test_selection", "scenario_family_id": "restock-availability-integration-test",
+      "task_text": "A restock event handler changed and the concern is whether the next checkout sees more available units. Run the narrow integration test for that handoff.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one test or clarification action; do not edit files.",
+      "gold_action_id": "test.restock_integration", "wrong_competitor_action_id": "test.webhooks_unit",
+      "label_rationale": "The restock integration checks availability across the event boundary. Webhook units focus on delivery retry, not downstream availability.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_restock_event_increases_checkout_availability"},
+      "mutation": {"path": "src/inventory/availability.py", "find": "return available_stock(stock, sku)", "replace": "return 0"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "TS-08", "split": "pilot", "domain": "test_selection", "scenario_family_id": "duplicate-restock-integration-test",
+      "task_text": "A provider can redeliver the same restock event. Run the narrow test that proves a repeated event ID does not double-count inventory.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one test or clarification action; do not edit files.",
+      "gold_action_id": "test.webhook_dedup_integration", "wrong_competitor_action_id": "test.restock_integration",
+      "label_rationale": "The duplicate-webhook integration suite is the only suite that verifies idempotency with an event ID.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_duplicate_delivery_does_not_double_count_restock"},
+      "mutation": {"path": "src/inventory/webhooks.py", "find": "if normalized_id in processed_event_ids:", "replace": "if False:"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "TS-09", "split": "pilot", "domain": "test_selection", "scenario_family_id": "nonpositive-release-regression-test",
+      "task_text": "A reconciliation patch must never return zero units to stock. Run the regression suite written specifically for that nonpositive-release failure.",
+      "repository_context": "CopperLedger is a small Python inventory service. Select exactly one test or clarification action; do not edit files.",
+      "gold_action_id": "test.reservation_regression", "wrong_competitor_action_id": "test.service_unit",
+      "label_rationale": "The regression suite is the focused preservation test for zero-unit releases. The broad service unit suite is valid but less specifically justified.",
+      "label_evidence": {"match_kind": "literal", "marker": "test_reconciliation_cannot_release_zero_units"},
+      "mutation": {
+        "path": "src/inventory/service.py",
+        "find": "def release_stock(stock: dict[str, int], sku: str, quantity: int) -> int:\n    \"\"\"Return a positive number of previously held units to availability.\"\"\"\n    if quantity <= 0:",
+        "replace": "def release_stock(stock: dict[str, int], sku: str, quantity: int) -> int:\n    \"\"\"Return a positive number of previously held units to availability.\"\"\"\n    if quantity < 0:"
+      },
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "TS-10", "split": "pilot", "domain": "test_selection", "scenario_family_id": "ambiguous-test-request",
+      "task_text": "Run the relevant tests before we merge this inventory change.",
+      "repository_context": "No changed component, observed failure, or behavior to verify is supplied. Select the safest next action.",
+      "gold_action_id": "test.request_clarification", "wrong_competitor_action_id": "test.service_unit",
+      "label_rationale": "Without a changed surface or acceptance behavior, selecting a focused suite would be arbitrary; request those details first.",
+      "label_evidence": {"match_kind": "literal", "marker": "\"status\":\"clarification_required\""},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+
+    {
+      "task_id": "VH-01", "split": "pilot", "domain": "version_history", "scenario_family_id": "reservation-introduction-commit",
+      "task_text": "A reviewer wants the exact patch that first introduced the stock reservation guard. Inspect the known tagged revision rather than a broad history list.",
+      "repository_context": "CopperLedger has a deterministic local Git history. Select exactly one read-only history action.",
+      "gold_action_id": "history.show_reserve_introduction", "wrong_competitor_action_id": "history.blame_service",
+      "label_rationale": "The named annotated tag points to the introduction patch. Blame only attributes current lines and does not present the full change.",
+      "label_evidence": {"match_kind": "literal", "marker": "tag fixture/reserve-stock-introduced"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "VH-02", "split": "pilot", "domain": "version_history", "scenario_family_id": "price-rounding-fix-commit",
+      "task_text": "A finance auditor needs the complete patch and changed-file stat for the known half-cent rounding fix. Inspect its tagged commit.",
+      "repository_context": "CopperLedger has a deterministic local Git history. Select exactly one read-only history action.",
+      "gold_action_id": "history.show_price_rounding", "wrong_competitor_action_id": "history.log_webhooks",
+      "label_rationale": "The price-rounding tag gives the requested patch and stat. Webhook history is an unrelated near-neighbor in the same Git domain.",
+      "label_evidence": {"match_kind": "literal", "marker": "tag fixture/price-rounding-fix"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "VH-03", "split": "pilot", "domain": "version_history", "scenario_family_id": "webhook-retry-commit",
+      "task_text": "Investigate the revision that added retries after a restock notification connection error. Show the tagged change itself.",
+      "repository_context": "CopperLedger has a deterministic local Git history. Select exactly one read-only history action.",
+      "gold_action_id": "history.show_webhook_retry", "wrong_competitor_action_id": "history.show_config_default",
+      "label_rationale": "The retry tag is the exact revision requested. Configuration history cannot reveal its delivery-loop change.",
+      "label_evidence": {"match_kind": "literal", "marker": "tag fixture/webhook-retry"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "VH-04", "split": "pilot", "domain": "version_history", "scenario_family_id": "api-health-commit",
+      "task_text": "Release notes refer to the commit that added the inventory API health response. Inspect that known patch and its stat.",
+      "repository_context": "CopperLedger has a deterministic local Git history. Select exactly one read-only history action.",
+      "gold_action_id": "history.show_api_health", "wrong_competitor_action_id": "history.show_cli_json",
+      "label_rationale": "The API-health tag resolves the exact revision. CLI JSON history is an output-format distraction.",
+      "label_evidence": {"match_kind": "literal", "marker": "tag fixture/api-health"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "VH-05", "split": "pilot", "domain": "version_history", "scenario_family_id": "cli-json-commit",
+      "task_text": "An automation regression is suspected after JSON inventory output was introduced. Inspect the commit that added the JSON option.",
+      "repository_context": "CopperLedger has a deterministic local Git history. Select exactly one read-only history action.",
+      "gold_action_id": "history.show_cli_json", "wrong_competitor_action_id": "history.show_api_health",
+      "label_rationale": "The cli-json tag contains the format addition. The health helper is unrelated despite also producing structured data.",
+      "label_evidence": {"match_kind": "literal", "marker": "tag fixture/cli-json"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "VH-06", "split": "pilot", "domain": "version_history", "scenario_family_id": "config-default-commit",
+      "task_text": "An operator asks when the service started accepting STOCK_ALERT_LIMIT from the environment. Inspect the exact tagged configuration change.",
+      "repository_context": "CopperLedger has a deterministic local Git history. Select exactly one read-only history action.",
+      "gold_action_id": "history.show_config_default", "wrong_competitor_action_id": "history.show_api_health",
+      "label_rationale": "The tagged commit presents the introduction and its test. Blame identifies current-line attribution but not the full change.",
+      "label_evidence": {"match_kind": "literal", "marker": "tag fixture/config-default"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "VH-07", "split": "pilot", "domain": "version_history", "scenario_family_id": "nonpositive-release-diff",
+      "task_text": "Compare the service implementation just before and after the regression fix that blocks nonpositive stock releases. Use the bounded diff prepared for those two revisions.",
+      "repository_context": "CopperLedger has a deterministic local Git history. Select exactly one read-only history action.",
+      "gold_action_id": "history.diff_reservation_regression", "wrong_competitor_action_id": "history.show_reserve_introduction",
+      "label_rationale": "The bounded diff isolates the requested before/after behavior. The reservation-introduction patch predates the regression and cannot make that comparison.",
+      "label_evidence": {"match_kind": "regex", "marker": "(?m)^\\+\\s+raise ValueError\\(\\\"release quantity must be positive\\\"\\)"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "VH-08", "split": "pilot", "domain": "version_history", "scenario_family_id": "service-line-attribution",
+      "task_text": "A maintainer needs the author and revision responsible for the current reserve_stock definition line, not the whole change. Use line-level history for service.py.",
+      "repository_context": "CopperLedger has a deterministic local Git history. Select exactly one read-only history action.",
+      "gold_action_id": "history.blame_service", "wrong_competitor_action_id": "history.show_reserve_introduction",
+      "label_rationale": "Git blame returns current-line attribution; a tagged show gives a patch but not the requested line-by-line attribution view.",
+      "label_evidence": {"match_kind": "regex", "marker": "(?m)\\) def reserve_stock"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "VH-09", "split": "pilot", "domain": "version_history", "scenario_family_id": "webhooks-path-history",
+      "task_text": "List every commit that has changed the webhook implementation, including identifiers and subjects. Do not inspect only one known patch.",
+      "repository_context": "CopperLedger has a deterministic local Git history. Select exactly one read-only history action.",
+      "gold_action_id": "history.log_webhooks", "wrong_competitor_action_id": "history.show_webhook_retry",
+      "label_rationale": "The path-scoped log enumerates all relevant commits. Showing the retry tag gives only one of them.",
+      "label_evidence": {"match_kind": "regex", "marker": "(?m)^[0-9a-f]{40}\\tretry restock notification delivery$"},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    },
+    {
+      "task_id": "VH-10", "split": "pilot", "domain": "version_history", "scenario_family_id": "ambiguous-history-request",
+      "task_text": "Investigate the historical inventory regression before the next release.",
+      "repository_context": "No file, symbol, revision range, or concrete historical question is supplied. Select the safest next action.",
+      "gold_action_id": "history.request_clarification", "wrong_competitor_action_id": "history.log_webhooks",
+      "label_rationale": "The request does not bound a history inspection. Asking for a target and question avoids arbitrary repository archaeology.",
+      "label_evidence": {"match_kind": "literal", "marker": "\"status\":\"clarification_required\""},
+      "review_status": "mechanically_verified_pending_researcher_review"
+    }
+  ]
+}

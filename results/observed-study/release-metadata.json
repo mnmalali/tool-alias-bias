@@ -1,0 +1,17 @@
+{
+  "release_schema_version": 1,
+  "study_label": "observed-study",
+  "study_version": "v1",
+  "tasks_sha256": "d74ca9155ea1f936607036308d91614941b5d7935faf7ef59e82fe2c5f81dd04",
+  "action_registry_sha256": "44fba700a75c3b187069cdd4be47db2286ea82237712cf9da057b00efb034acf",
+  "raw_ledger_sha256": "721922cffa70a8317ea4cab5719c4a7b191d540067e7a4b5e3d9831d70b6b1f7",
+  "raw_asset_filename": "tool-alias-bias-observed-study-v1-raw.tar.gz",
+  "raw_asset_sha256": "f683d77aef5f6b6e06f684003a90eed8777a5f6a0efa7adac1d4e733355c6ff2",
+  "raw_asset_root": "results/observed-study/raw",
+  "raw_file_count": 18,
+  "notes": [
+    "The original timestamped local directory name is intentionally not part of the public package.",
+    "The raw asset retains all observed study artifacts except an internal drafting handoff note.",
+    "Tracked compact outputs preserve the recorded partial-run and unreviewed-label status."
+  ]
+}

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tool-alias-bias-study"
+version = "0.1.0"
+description = "Reproducibility package for the exact tool-alias threshold study"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+[project.scripts]
+tool-alias-run = "study.run:main"
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.7"]
+
+[tool.setuptools.packages.find]
+include = ["pilot*", "study*"]

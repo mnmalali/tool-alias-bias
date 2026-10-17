@@ -1,0 +1,2257 @@
+[
+  {
+    "absolute_coverage_deviation_from_c0": 0.7768361581920904,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.8587570621468926,
+      "ci95_low": 0.6885714285714286,
+      "estimate": 0.7768361581920904
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.6885714285714286,
+      "ci95_low": -0.8587570621468926,
+      "estimate": -0.7768361581920904,
+      "full_180_task_worst_case_high": -0.7472222222222222,
+      "full_180_task_worst_case_low": -0.7805555555555556
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "action_change_rate": {
+      "ci95_high": 0.017142857142857144,
+      "ci95_low": 0.0,
+      "estimate": 0.005649717514124294
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": -0.6885714285714286,
+      "ci95_low": -0.8587570621468926,
+      "estimate": -0.7768361581920904,
+      "full_180_task_worst_case_high": -0.7472222222222222,
+      "full_180_task_worst_case_low": -0.7805555555555556
+    },
+    "excluded_tasks": 3,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 177,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.7780898876404494,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.8595505617977528,
+      "ci95_low": 0.6909845584081351,
+      "estimate": 0.7780898876404494
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.6909845584081352,
+      "ci95_low": -0.8595505617977528,
+      "estimate": -0.7780898876404494,
+      "full_180_task_worst_case_high": -0.7583333333333333,
+      "full_180_task_worst_case_low": -0.7805555555555556
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.07303370786516854,
+      "ci95_low": 0.0,
+      "estimate": 0.028089887640449437
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": -0.6909845584081352,
+      "ci95_low": -0.8595505617977528,
+      "estimate": -0.7780898876404494,
+      "full_180_task_worst_case_high": -0.7583333333333333,
+      "full_180_task_worst_case_low": -0.7805555555555556
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.1452717971251019,
+      "ci95_low": 0.055523809523809524,
+      "estimate": 0.09550561797752809
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.03651685393258427,
+      "ci95_low": -0.03651685393258427,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.03651685393258427,
+      "ci95_low": -0.03651685393258427,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.014044943820224719,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.12148775894538597,
+      "ci95_low": 0.04774613960203377,
+      "estimate": 0.08146067415730338
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.047752808988764044,
+      "ci95_low": -0.019553072625698324,
+      "estimate": 0.014044943820224719,
+      "full_180_task_worst_case_high": 0.025,
+      "full_180_task_worst_case_low": 0.002777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.047752808988764044,
+      "ci95_low": -0.019553072625698324,
+      "estimate": 0.014044943820224719,
+      "full_180_task_worst_case_high": 0.025,
+      "full_180_task_worst_case_low": 0.002777777777777778
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.03389830508474576,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.1299588041431261,
+      "ci95_low": 0.0449438202247191,
+      "estimate": 0.0847457627118644
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.07303370786516854,
+      "ci95_low": -0.002824858757062147,
+      "estimate": 0.03389830508474576,
+      "full_180_task_worst_case_high": 0.05,
+      "full_180_task_worst_case_low": 0.016666666666666666
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.07303370786516854,
+      "ci95_low": -0.002824858757062147,
+      "estimate": 0.03389830508474576,
+      "full_180_task_worst_case_high": 0.05,
+      "full_180_task_worst_case_low": 0.016666666666666666
+    },
+    "excluded_tasks": 3,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 177,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.7768361581920904,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.8587570621468926,
+      "ci95_low": 0.6885714285714286,
+      "estimate": 0.7768361581920904
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.6885714285714286,
+      "ci95_low": -0.8587570621468926,
+      "estimate": -0.7768361581920904,
+      "full_180_task_worst_case_high": -0.7472222222222222,
+      "full_180_task_worst_case_low": -0.7805555555555556
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "action_change_rate": {
+      "ci95_high": 0.017142857142857144,
+      "ci95_low": 0.0,
+      "estimate": 0.005649717514124294
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": -0.6885714285714286,
+      "ci95_low": -0.8587570621468926,
+      "estimate": -0.7768361581920904,
+      "full_180_task_worst_case_high": -0.7472222222222222,
+      "full_180_task_worst_case_low": -0.7805555555555556
+    },
+    "excluded_tasks": 3,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 177,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.7780898876404494,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.8595505617977528,
+      "ci95_low": 0.6909845584081351,
+      "estimate": 0.7780898876404494
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.6909845584081352,
+      "ci95_low": -0.8595505617977528,
+      "estimate": -0.7780898876404494,
+      "full_180_task_worst_case_high": -0.7583333333333333,
+      "full_180_task_worst_case_low": -0.7805555555555556
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.07303370786516854,
+      "ci95_low": 0.0,
+      "estimate": 0.028089887640449437
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": -0.6909845584081352,
+      "ci95_low": -0.8595505617977528,
+      "estimate": -0.7780898876404494,
+      "full_180_task_worst_case_high": -0.7583333333333333,
+      "full_180_task_worst_case_low": -0.7805555555555556
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.1452717971251019,
+      "ci95_low": 0.055523809523809524,
+      "estimate": 0.09550561797752809
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.03651685393258427,
+      "ci95_low": -0.03651685393258427,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.03651685393258427,
+      "ci95_low": -0.03651685393258427,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.014044943820224719,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.12148775894538597,
+      "ci95_low": 0.04774613960203377,
+      "estimate": 0.08146067415730338
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.047752808988764044,
+      "ci95_low": -0.019553072625698324,
+      "estimate": 0.014044943820224719,
+      "full_180_task_worst_case_high": 0.025,
+      "full_180_task_worst_case_low": 0.002777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.047752808988764044,
+      "ci95_low": -0.019553072625698324,
+      "estimate": 0.014044943820224719,
+      "full_180_task_worst_case_high": 0.025,
+      "full_180_task_worst_case_low": 0.002777777777777778
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.03389830508474576,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.1299588041431261,
+      "ci95_low": 0.0449438202247191,
+      "estimate": 0.0847457627118644
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.07303370786516854,
+      "ci95_low": -0.002824858757062147,
+      "estimate": 0.03389830508474576,
+      "full_180_task_worst_case_high": 0.05,
+      "full_180_task_worst_case_low": 0.016666666666666666
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.07303370786516854,
+      "ci95_low": -0.002824858757062147,
+      "estimate": 0.03389830508474576,
+      "full_180_task_worst_case_high": 0.05,
+      "full_180_task_worst_case_low": 0.016666666666666666
+    },
+    "excluded_tasks": 3,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 177,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.03389830508474576,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.2011173184357542,
+      "ci95_low": 0.08757062146892655,
+      "estimate": 0.14124293785310735
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.022727272727272728,
+      "ci95_low": -0.09375,
+      "estimate": -0.03389830508474576,
+      "full_180_task_worst_case_high": -0.016666666666666666,
+      "full_180_task_worst_case_low": -0.05
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": 0.022727272727272728,
+      "ci95_low": -0.09375,
+      "estimate": -0.03389830508474576,
+      "full_180_task_worst_case_high": -0.016666666666666666,
+      "full_180_task_worst_case_low": -0.05
+    },
+    "excluded_tasks": 3,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 177,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.3258426966292135,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.4361111111111111,
+      "ci95_low": 0.24860295742196128,
+      "estimate": 0.34269662921348315
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.23292677120365682,
+      "ci95_low": -0.42178770949720673,
+      "estimate": -0.3258426966292135,
+      "full_180_task_worst_case_high": -0.3111111111111111,
+      "full_180_task_worst_case_low": -0.3333333333333333
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.014124293785310734,
+      "ci95_low": 0.0,
+      "estimate": 0.0056179775280898875
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": -0.23292677120365682,
+      "ci95_low": -0.42178770949720673,
+      "estimate": -0.3258426966292135,
+      "full_180_task_worst_case_high": -0.3111111111111111,
+      "full_180_task_worst_case_low": -0.3333333333333333
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.1452717971251019,
+      "ci95_low": 0.055523809523809524,
+      "estimate": 0.09550561797752809
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.03651685393258427,
+      "ci95_low": -0.03651685393258427,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.03651685393258427,
+      "ci95_low": -0.03651685393258427,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.014044943820224719,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.12148775894538597,
+      "ci95_low": 0.04774613960203377,
+      "estimate": 0.08146067415730338
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.047752808988764044,
+      "ci95_low": -0.019553072625698324,
+      "estimate": 0.014044943820224719,
+      "full_180_task_worst_case_high": 0.025,
+      "full_180_task_worst_case_low": 0.002777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.047752808988764044,
+      "ci95_low": -0.019553072625698324,
+      "estimate": 0.014044943820224719,
+      "full_180_task_worst_case_high": 0.025,
+      "full_180_task_worst_case_low": 0.002777777777777778
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.03389830508474576,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.1299588041431261,
+      "ci95_low": 0.0449438202247191,
+      "estimate": 0.0847457627118644
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.07303370786516854,
+      "ci95_low": -0.002824858757062147,
+      "estimate": 0.03389830508474576,
+      "full_180_task_worst_case_high": 0.05,
+      "full_180_task_worst_case_low": 0.016666666666666666
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.07303370786516854,
+      "ci95_low": -0.002824858757062147,
+      "estimate": 0.03389830508474576,
+      "full_180_task_worst_case_high": 0.05,
+      "full_180_task_worst_case_low": 0.016666666666666666
+    },
+    "excluded_tasks": 3,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 177,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "excluded_tasks": 3,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 177,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": -0.011111111111111112
+    },
+    "excluded_tasks": 2,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 178,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.016666666666666666,
+      "full_180_task_worst_case_low": -0.016666666666666666
+    },
+    "excluded_tasks": 3,
+    "model_arm": "jev",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 177,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.7222222222222222,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.8001388888888882,
+      "ci95_low": 0.6388888888888888,
+      "estimate": 0.7222222222222222
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.6388888888888888,
+      "ci95_low": -0.8001388888888888,
+      "estimate": -0.7222222222222222,
+      "full_180_task_worst_case_high": -0.7222222222222222,
+      "full_180_task_worst_case_low": -0.7222222222222222
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.027777777777777776,
+      "ci95_low": 0.0,
+      "estimate": 0.011111111111111112
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": -0.6388888888888888,
+      "ci95_low": -0.8001388888888888,
+      "estimate": -0.7222222222222222,
+      "full_180_task_worst_case_high": -0.7222222222222222,
+      "full_180_task_worst_case_low": -0.7222222222222222
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.7055555555555556,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.7888888888888889,
+      "ci95_low": 0.6166666666666667,
+      "estimate": 0.7055555555555556
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.6166666666666667,
+      "ci95_low": -0.7888888888888889,
+      "estimate": -0.7055555555555556,
+      "full_180_task_worst_case_high": -0.7055555555555556,
+      "full_180_task_worst_case_low": -0.7055555555555556
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.027777777777777776,
+      "ci95_low": 0.0,
+      "estimate": 0.011111111111111112
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": -0.6166666666666667,
+      "ci95_low": -0.7888888888888889,
+      "estimate": -0.7055555555555556,
+      "full_180_task_worst_case_high": -0.7055555555555556,
+      "full_180_task_worst_case_low": -0.7055555555555556
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.05555555555555555,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.3,
+      "ci95_low": 0.16666666666666666,
+      "estimate": 0.23333333333333334
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.14444444444444443,
+      "ci95_low": -0.027777777777777776,
+      "estimate": 0.05555555555555555,
+      "full_180_task_worst_case_high": 0.05555555555555555,
+      "full_180_task_worst_case_low": 0.05555555555555555
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.016666666666666666,
+      "ci95_low": 0.0,
+      "estimate": 0.005555555555555556
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.14444444444444443,
+      "ci95_low": -0.027777777777777776,
+      "estimate": 0.05555555555555555,
+      "full_180_task_worst_case_high": 0.05555555555555555,
+      "full_180_task_worst_case_low": 0.05555555555555555
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.011111111111111112,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.3111111111111111,
+      "ci95_low": 0.18333333333333332,
+      "estimate": 0.24444444444444444
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.09444444444444444,
+      "ci95_low": -0.07777777777777778,
+      "estimate": 0.011111111111111112,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": 0.011111111111111112
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.05555555555555555,
+      "ci95_low": 0.0,
+      "estimate": 0.022222222222222223
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.09444444444444444,
+      "ci95_low": -0.07777777777777778,
+      "estimate": 0.011111111111111112,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": 0.011111111111111112
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.07777777777777778,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.38333333333333336,
+      "ci95_low": 0.2388888888888889,
+      "estimate": 0.3111111111111111
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.005555555555555556,
+      "ci95_low": -0.16111111111111112,
+      "estimate": -0.07777777777777778,
+      "full_180_task_worst_case_high": -0.07777777777777778,
+      "full_180_task_worst_case_low": -0.07777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.016666666666666666,
+      "ci95_low": 0.0,
+      "estimate": 0.005555555555555556
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.005555555555555556,
+      "ci95_low": -0.16111111111111112,
+      "estimate": -0.07777777777777778,
+      "full_180_task_worst_case_high": -0.07777777777777778,
+      "full_180_task_worst_case_low": -0.07777777777777778
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P1",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.7222222222222222,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.8001388888888882,
+      "ci95_low": 0.6388888888888888,
+      "estimate": 0.7222222222222222
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.6388888888888888,
+      "ci95_low": -0.8001388888888888,
+      "estimate": -0.7222222222222222,
+      "full_180_task_worst_case_high": -0.7222222222222222,
+      "full_180_task_worst_case_low": -0.7222222222222222
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.027777777777777776,
+      "ci95_low": 0.0,
+      "estimate": 0.011111111111111112
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": -0.6388888888888888,
+      "ci95_low": -0.8001388888888888,
+      "estimate": -0.7222222222222222,
+      "full_180_task_worst_case_high": -0.7222222222222222,
+      "full_180_task_worst_case_low": -0.7222222222222222
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.7055555555555556,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.7888888888888889,
+      "ci95_low": 0.6166666666666667,
+      "estimate": 0.7055555555555556
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.6166666666666667,
+      "ci95_low": -0.7888888888888889,
+      "estimate": -0.7055555555555556,
+      "full_180_task_worst_case_high": -0.7055555555555556,
+      "full_180_task_worst_case_low": -0.7055555555555556
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.027777777777777776,
+      "ci95_low": 0.0,
+      "estimate": 0.011111111111111112
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": -0.6166666666666667,
+      "ci95_low": -0.7888888888888889,
+      "estimate": -0.7055555555555556,
+      "full_180_task_worst_case_high": -0.7055555555555556,
+      "full_180_task_worst_case_low": -0.7055555555555556
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.05555555555555555,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.3,
+      "ci95_low": 0.16666666666666666,
+      "estimate": 0.23333333333333334
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.14444444444444443,
+      "ci95_low": -0.027777777777777776,
+      "estimate": 0.05555555555555555,
+      "full_180_task_worst_case_high": 0.05555555555555555,
+      "full_180_task_worst_case_low": 0.05555555555555555
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.016666666666666666,
+      "ci95_low": 0.0,
+      "estimate": 0.005555555555555556
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.14444444444444443,
+      "ci95_low": -0.027777777777777776,
+      "estimate": 0.05555555555555555,
+      "full_180_task_worst_case_high": 0.05555555555555555,
+      "full_180_task_worst_case_low": 0.05555555555555555
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.011111111111111112,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.3111111111111111,
+      "ci95_low": 0.18333333333333332,
+      "estimate": 0.24444444444444444
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.09444444444444444,
+      "ci95_low": -0.07777777777777778,
+      "estimate": 0.011111111111111112,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": 0.011111111111111112
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.05555555555555555,
+      "ci95_low": 0.0,
+      "estimate": 0.022222222222222223
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.09444444444444444,
+      "ci95_low": -0.07777777777777778,
+      "estimate": 0.011111111111111112,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": 0.011111111111111112
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.07777777777777778,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.38333333333333336,
+      "ci95_low": 0.2388888888888889,
+      "estimate": 0.3111111111111111
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.005555555555555556,
+      "ci95_low": -0.16111111111111112,
+      "estimate": -0.07777777777777778,
+      "full_180_task_worst_case_high": -0.07777777777777778,
+      "full_180_task_worst_case_low": -0.07777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.016666666666666666,
+      "ci95_low": 0.0,
+      "estimate": 0.005555555555555556
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.005555555555555556,
+      "ci95_low": -0.16111111111111112,
+      "estimate": -0.07777777777777778,
+      "full_180_task_worst_case_high": -0.07777777777777778,
+      "full_180_task_worst_case_low": -0.07777777777777778
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.10555555555555556,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.3888888888888889,
+      "ci95_low": 0.24444444444444444,
+      "estimate": 0.31666666666666665
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.022222222222222223,
+      "ci95_low": -0.18888888888888888,
+      "estimate": -0.10555555555555556,
+      "full_180_task_worst_case_high": -0.10555555555555556,
+      "full_180_task_worst_case_low": -0.10555555555555556
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.027777777777777776,
+      "ci95_low": 0.0,
+      "estimate": 0.011111111111111112
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": -0.022222222222222223,
+      "ci95_low": -0.18888888888888888,
+      "estimate": -0.10555555555555556,
+      "full_180_task_worst_case_high": -0.10555555555555556,
+      "full_180_task_worst_case_low": -0.10555555555555556
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.06666666666666667,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.3611111111111111,
+      "ci95_low": 0.2388888888888889,
+      "estimate": 0.3
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.027777777777777776,
+      "ci95_low": -0.16111111111111112,
+      "estimate": -0.06666666666666667,
+      "full_180_task_worst_case_high": -0.06666666666666667,
+      "full_180_task_worst_case_low": -0.06666666666666667
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.044444444444444446,
+      "ci95_low": 0.0,
+      "estimate": 0.016666666666666666
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": 0.027777777777777776,
+      "ci95_low": -0.16111111111111112,
+      "estimate": -0.06666666666666667,
+      "full_180_task_worst_case_high": -0.06666666666666667,
+      "full_180_task_worst_case_low": -0.06666666666666667
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.05555555555555555,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.3,
+      "ci95_low": 0.16666666666666666,
+      "estimate": 0.23333333333333334
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.14444444444444443,
+      "ci95_low": -0.027777777777777776,
+      "estimate": 0.05555555555555555,
+      "full_180_task_worst_case_high": 0.05555555555555555,
+      "full_180_task_worst_case_low": 0.05555555555555555
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.016666666666666666,
+      "ci95_low": 0.0,
+      "estimate": 0.005555555555555556
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.14444444444444443,
+      "ci95_low": -0.027777777777777776,
+      "estimate": 0.05555555555555555,
+      "full_180_task_worst_case_high": 0.05555555555555555,
+      "full_180_task_worst_case_low": 0.05555555555555555
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.011111111111111112,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.3111111111111111,
+      "ci95_low": 0.18333333333333332,
+      "estimate": 0.24444444444444444
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.09444444444444444,
+      "ci95_low": -0.07777777777777778,
+      "estimate": 0.011111111111111112,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": 0.011111111111111112
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.044444444444444446,
+      "ci95_low": 0.0,
+      "estimate": 0.016666666666666666
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.09444444444444444,
+      "ci95_low": -0.07777777777777778,
+      "estimate": 0.011111111111111112,
+      "full_180_task_worst_case_high": 0.011111111111111112,
+      "full_180_task_worst_case_low": 0.011111111111111112
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.07777777777777778,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.38333333333333336,
+      "ci95_low": 0.2388888888888889,
+      "estimate": 0.3111111111111111
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.005555555555555556,
+      "ci95_low": -0.16111111111111112,
+      "estimate": -0.07777777777777778,
+      "full_180_task_worst_case_high": -0.07777777777777778,
+      "full_180_task_worst_case_low": -0.07777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.016666666666666666,
+      "ci95_low": 0.0,
+      "estimate": 0.005555555555555556
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.005555555555555556,
+      "ci95_low": -0.16111111111111112,
+      "estimate": -0.07777777777777778,
+      "full_180_task_worst_case_high": -0.07777777777777778,
+      "full_180_task_worst_case_low": -0.07777777777777778
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "excluded_tasks": 0,
+    "model_arm": "luna",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.675,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.7805555555555556,
+      "ci95_low": 0.5944444444444444,
+      "estimate": 0.6916666666666667
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.5722222222222222,
+      "ci95_low": -0.7666666666666667,
+      "estimate": -0.675,
+      "full_180_task_worst_case_high": -0.675,
+      "full_180_task_worst_case_low": -0.675
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.008333333333333333,
+      "ci95_low": 0.0,
+      "estimate": 0.002777777777777778
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": -0.5722222222222222,
+      "ci95_low": -0.7666666666666667,
+      "estimate": -0.675,
+      "full_180_task_worst_case_high": -0.675,
+      "full_180_task_worst_case_low": -0.675
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.6166666666666667,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.7055555555555556,
+      "ci95_low": 0.5166666666666667,
+      "estimate": 0.6166666666666667
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": -0.5166666666666667,
+      "ci95_low": -0.7055555555555556,
+      "estimate": -0.6166666666666667,
+      "full_180_task_worst_case_high": -0.6166666666666667,
+      "full_180_task_worst_case_low": -0.6166666666666667
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.008333333333333333,
+      "ci95_low": 0.0,
+      "estimate": 0.002777777777777778
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": -0.5166666666666667,
+      "ci95_low": -0.7055555555555556,
+      "estimate": -0.6166666666666667,
+      "full_180_task_worst_case_high": -0.6166666666666667,
+      "full_180_task_worst_case_low": -0.6166666666666667
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.002777777777777778,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.2722222222222222,
+      "ci95_low": 0.15833333333333333,
+      "estimate": 0.21388888888888888
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.058333333333333334,
+      "ci95_low": -0.06111111111111111,
+      "estimate": -0.002777777777777778,
+      "full_180_task_worst_case_high": -0.002777777777777778,
+      "full_180_task_worst_case_low": -0.002777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.022222222222222223,
+      "ci95_low": 0.0,
+      "estimate": 0.008333333333333333
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.058333333333333334,
+      "ci95_low": -0.06111111111111111,
+      "estimate": -0.002777777777777778,
+      "full_180_task_worst_case_high": -0.002777777777777778,
+      "full_180_task_worst_case_low": -0.002777777777777778
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.025,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.25833333333333336,
+      "ci95_low": 0.14166666666666666,
+      "estimate": 0.19722222222222222
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.08618055555555518,
+      "ci95_low": -0.03888888888888889,
+      "estimate": 0.022222222222222223,
+      "full_180_task_worst_case_high": 0.022222222222222223,
+      "full_180_task_worst_case_low": 0.022222222222222223
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.008333333333333333,
+      "ci95_low": 0.0,
+      "estimate": 0.002777777777777778,
+      "full_180_task_worst_case_high": 0.002777777777777778,
+      "full_180_task_worst_case_low": 0.002777777777777778
+    },
+    "action_change_rate": {
+      "ci95_high": 0.022222222222222223,
+      "ci95_low": 0.0,
+      "estimate": 0.008333333333333333
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.08888888888888889,
+      "ci95_low": -0.03611111111111111,
+      "estimate": 0.025,
+      "full_180_task_worst_case_high": 0.025,
+      "full_180_task_worst_case_low": 0.025
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.002793296089385475,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.2361111111111111,
+      "ci95_low": 0.1194244350282486,
+      "estimate": 0.17597765363128492
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.05898876404494382,
+      "ci95_low": -0.05056179775280899,
+      "estimate": 0.002793296089385475,
+      "full_180_task_worst_case_high": 0.008333333333333333,
+      "full_180_task_worst_case_low": -0.002777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.005555555555555556,
+      "full_180_task_worst_case_low": -0.005555555555555556
+    },
+    "action_change_rate": {
+      "ci95_high": 0.036312849162011177,
+      "ci95_low": 0.002777777777777778,
+      "estimate": 0.01675977653631285
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.05898876404494382,
+      "ci95_low": -0.05056179775280899,
+      "estimate": 0.002793296089385475,
+      "full_180_task_worst_case_high": 0.008333333333333333,
+      "full_180_task_worst_case_low": -0.002777777777777778
+    },
+    "excluded_tasks": 1,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P2",
+    "retained_complete_pair_tasks": 179,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.2361111111111111,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.35555555555555557,
+      "ci95_low": 0.17777777777777778,
+      "estimate": 0.2638888888888889
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.33055555555555555,
+      "ci95_low": 0.14722222222222223,
+      "estimate": 0.2361111111111111,
+      "full_180_task_worst_case_high": 0.2361111111111111,
+      "full_180_task_worst_case_low": 0.2361111111111111
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.008333333333333333,
+      "ci95_low": 0.0,
+      "estimate": 0.002777777777777778
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": 0.33055555555555555,
+      "ci95_low": 0.14722222222222223,
+      "estimate": 0.2361111111111111,
+      "full_180_task_worst_case_high": 0.2361111111111111,
+      "full_180_task_worst_case_low": 0.2361111111111111
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.20277777777777778,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.3416666666666667,
+      "ci95_low": 0.18055555555555555,
+      "estimate": 0.25833333333333336
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.29173611111111075,
+      "ci95_low": 0.11944444444444445,
+      "estimate": 0.20277777777777778,
+      "full_180_task_worst_case_high": 0.20277777777777778,
+      "full_180_task_worst_case_low": 0.20277777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.008333333333333333,
+      "ci95_low": 0.0,
+      "estimate": 0.002777777777777778
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": 0.29173611111111075,
+      "ci95_low": 0.11944444444444445,
+      "estimate": 0.20277777777777778,
+      "full_180_task_worst_case_high": 0.20277777777777778,
+      "full_180_task_worst_case_low": 0.20277777777777778
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.002777777777777778,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.2722222222222222,
+      "ci95_low": 0.15833333333333333,
+      "estimate": 0.21388888888888888
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.058333333333333334,
+      "ci95_low": -0.06111111111111111,
+      "estimate": -0.002777777777777778,
+      "full_180_task_worst_case_high": -0.002777777777777778,
+      "full_180_task_worst_case_low": -0.002777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.027777777777777776,
+      "ci95_low": 0.0,
+      "estimate": 0.011111111111111112
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.058333333333333334,
+      "ci95_low": -0.06111111111111111,
+      "estimate": -0.002777777777777778,
+      "full_180_task_worst_case_high": -0.002777777777777778,
+      "full_180_task_worst_case_low": -0.002777777777777778
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.027777777777777776,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.2611111111111111,
+      "ci95_low": 0.14444444444444443,
+      "estimate": 0.2
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.08618055555555518,
+      "ci95_low": -0.03888888888888889,
+      "estimate": 0.022222222222222223,
+      "full_180_task_worst_case_high": 0.022222222222222223,
+      "full_180_task_worst_case_low": 0.022222222222222223
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.016666666666666666,
+      "ci95_low": 0.0,
+      "estimate": 0.005555555555555556,
+      "full_180_task_worst_case_high": 0.005555555555555556,
+      "full_180_task_worst_case_low": 0.005555555555555556
+    },
+    "action_change_rate": {
+      "ci95_high": 0.022222222222222223,
+      "ci95_low": 0.0,
+      "estimate": 0.008333333333333333
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.09173611111111073,
+      "ci95_low": -0.03333333333333333,
+      "estimate": 0.027777777777777776,
+      "full_180_task_worst_case_high": 0.027777777777777776,
+      "full_180_task_worst_case_low": 0.027777777777777776
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.002793296089385475,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.2361111111111111,
+      "ci95_low": 0.1194244350282486,
+      "estimate": 0.17597765363128492
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.05898876404494382,
+      "ci95_low": -0.05056179775280899,
+      "estimate": 0.002793296089385475,
+      "full_180_task_worst_case_high": 0.008333333333333333,
+      "full_180_task_worst_case_low": -0.002777777777777778
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.005555555555555556,
+      "full_180_task_worst_case_low": -0.005555555555555556
+    },
+    "action_change_rate": {
+      "ci95_high": 0.036312849162011177,
+      "ci95_low": 0.002777777777777778,
+      "estimate": 0.01675977653631285
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.05898876404494382,
+      "ci95_low": -0.05056179775280899,
+      "estimate": 0.002793296089385475,
+      "full_180_task_worst_case_high": 0.008333333333333333,
+      "full_180_task_worst_case_low": -0.002777777777777778
+    },
+    "excluded_tasks": 1,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P3",
+    "retained_complete_pair_tasks": 179,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C1",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C2",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C3",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C4",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.0,
+      "full_180_task_worst_case_low": 0.0
+    },
+    "excluded_tasks": 0,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 180,
+    "retained_families": 60
+  },
+  {
+    "absolute_coverage_deviation_from_c0": 0.0,
+    "accept_defer_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "accepted_correct_yield_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.005555555555555556,
+      "full_180_task_worst_case_low": -0.005555555555555556
+    },
+    "accepted_wrong_rate_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.005555555555555556,
+      "full_180_task_worst_case_low": -0.005555555555555556
+    },
+    "action_change_rate": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0
+    },
+    "condition": "C5",
+    "coverage_delta": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "estimate": 0.0,
+      "full_180_task_worst_case_high": 0.005555555555555556,
+      "full_180_task_worst_case_low": -0.005555555555555556
+    },
+    "excluded_tasks": 1,
+    "model_arm": "haiku",
+    "planned_held_out_tasks": 180,
+    "policy": "P4",
+    "retained_complete_pair_tasks": 179,
+    "retained_families": 60
+  }
+]
